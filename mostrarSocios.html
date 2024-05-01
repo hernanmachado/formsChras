@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Socios</title>
+</head>
+<body>
+    <h2>Datos de Socios</h2>
+    <div id="datosSocios"></div>
+
+    <script>
+        // Obtener los datos de localStorage
+        var datosSocios = localStorage.getItem("datosSocios");
+
+        // Mostrar los datos en la página
+        var datosSociosDiv = document.getElementById("datosSocios");
+        if (datosSocios) {
+            datosSociosDiv.innerHTML = datosSocios;
+        } else {
+            datosSociosDiv.innerHTML = "<p>No se han capturado datos de socios.</p>";
+        }
+    </script>
+</body>
+</html>

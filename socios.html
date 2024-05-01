@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro para Socios Clientes</title>
+</head>
+<body>
+    <h2>Registro de Socios Clientes</h2>
+    <form onsubmit="return mostrarDatos()" method="post">
+        <label for="numeroSocio">Número de Socio:</label><br>
+        <input type="text" id="numeroSocio" name="numeroSocio" required><br><br>
+        
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+        
+        <label for="cantidadAutos">Cantidad de Autos:</label><br>
+        <input type="number" id="cantidadAutos" name="cantidadAutos" min="0" required><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="mandarSociosJS.js"></script>
+</body>
+</html>
