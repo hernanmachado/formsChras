@@ -10,7 +10,7 @@ function mostrarDatos() {
                 "Correo Electrónico: " + email + "<br>" +
                 "Teléfono: " + telefono;
 
-    localStorage.setItem("datosPotenciales", datos); //setItem encontrado en 
+    localStorage.setItem("datosPotenciales", datos); //https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem 
 
     window.location.href = "mostrar_datos_potencial_cliente.html"; // Redirecciona a la página de mostrardatos_potencial_cliente.html
     return false; // Evita el envío normal del formulario
